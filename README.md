@@ -18,7 +18,7 @@ The application uses [__sqlite3__](https://docs.python.org/3/library/sqlite3.htm
 
 1. Clone this repository to your local system.
 2. After cloning this repository to your local system, create a __config.py__ file in the same repository.
-3. Add the following Python statement to __config.py__ :
+3. Add the following Python statements to __config.py__ :
   ```python
   # configuration file containing confidential credentials
   # user authentication password is used to login to the application
@@ -30,7 +30,7 @@ The application uses [__sqlite3__](https://docs.python.org/3/library/sqlite3.htm
   edit_mode_password = '<edit_mode_password>'                               # e.g. edit_mode_password = 'allow_edit'
   dr_mls_access_code = '<doctor_or_medical_lab_scientist_access_code>'      # e.g. dr_mls_access_code = 'access_auth'
   ```
-4. Move to the same directory in command prompt/terminal and execute the following command (Running this command will open the application in a new tab in your default browser automatically; you don't need internet connection to work with this application):
+4. Move to the same directory in command prompt/terminal and execute the following command (running this command will open the application in a new tab in your default browser automatically; you don't need internet connection to work with this application):
 ```cmd
 > streamlit run hims_app.py
 ```
@@ -40,4 +40,4 @@ The application uses [__sqlite3__](https://docs.python.org/3/library/sqlite3.htm
 * Here's a [link](https://drive.google.com/file/d/1DXUKgfrbsullwRjFxDKvNSSHKqBZ2Xur/view?usp=sharing) to a screen cast (video) of the working of this application. Please note that this video is for an older version, but there are not a lot of changes in the updated version. The changes in the updated version include:
   * __Edit mode password__ - this is to ensure that only the people who are authorised to add, delete and update the patient, doctor and department records can do so. Viewing the data doesn't require this second level of authentication.
   * __Doctor/ Medical Lab Scientist access code__ - this is to ensure that only doctors and medical lab scientists are able to add, delete and update prescription and medical test details. Viewing prescriptions and medical tests of a patient doesn't require this second level of authentication.
-  * The functionality of 'Listing doctors of a particular department using the department unique ID' has been moved from the Doctor module to the Department module.
+  * The functionality of *'Listing doctors of a particular department using the department unique ID'* has been moved from the *Doctor* module to the *Department* module.
